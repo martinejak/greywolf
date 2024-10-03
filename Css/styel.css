@@ -20,9 +20,12 @@ body {
 
 /* Logo styling */
 .logo{
-    max-width: 40%; /* Juster logoets bredde */
+    max-width: 60%; /* Juster logoets bredde */
     height: auto;
-    position:fixed
+    justify-content: center; /* Horisontal centrering af logoet */
+    position: absolute;
+    top: auto;
+    left: 150px
 }
 
 
@@ -50,7 +53,7 @@ h5 {
     cursor: pointer;
     color: black; /* Sort farve til burger-ikonet */
     position: absolute;
-    top: 20px;   /* Placeret 20px fra toppen */
+    top: 40px;   /* Placeret 20px fra toppen */
     left: 20px;  /* Placeret 20px fra venstre */
     z-index: 2;  /* Sørg for at den vises over andre elementer */
 }

@@ -1,8 +1,8 @@
 {    box-sizing: border-box;}
 
-.header { 
+header { 
     background-color: rgb(255, 255, 255); 
-    height: 200px;
+    height: 400px;
 }
 body {
     font-family: Arial, sans-serif;
@@ -24,12 +24,7 @@ h5 {
     font-weight: bold; /* Gør fonten fed */
 }
 
-* Skjul checkbox - bruges til toggling */
-#toggle-menu {
-    display: contents;
-}
-
-/* Skjul checkbox */
+/* Skjul checkbox - bruges til toggling */
 #toggle-menu {
     display: none;
 }
@@ -38,8 +33,23 @@ h5 {
 .burger-icon {
     font-size: 30px;
     cursor: pointer;
-    color: black;
-    display: none; /* Skjult på store skærme */
+    color: black; /* Sort farve til burger-ikonet */
+    position: absolute;
+    top: 20px;   /* Placeret 20px fra toppen */
+    left: 20px;  /* Placeret 20px fra venstre */
+    z-index: 2;  /* Sørg for at den vises over andre elementer */
+}
+/* Menu styling */
+.menu {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    display: none; /* Skjul menuen som standard */
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
 /* Menu links */

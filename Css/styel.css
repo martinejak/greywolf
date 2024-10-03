@@ -1,21 +1,9 @@
 {    box-sizing: border-box;}
 
-/* Styling af hvid header */
-.header {
-    background-color: white;
-    color: black;
-    position: fixed; /* Fast placering øverst */
-    top: 0;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: space-between; /* Burger menu til højre, overskrift til venstre */
-    align-items: center;
-    padding: 0 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 10; /* Sørg for, at headeren er foran indholdet */
+.header { 
+    background-color: rgb(255, 255, 255); 
+    height: 200px;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #000000;
@@ -41,60 +29,77 @@ h5 {
     display: contents;
 }
 
+/* Skjul checkbox */
+#toggle-menu {
+    display: none;
+}
+
 /* Styling af burger-ikon */
 .burger-icon {
     font-size: 30px;
     cursor: pointer;
-    color: white;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 10;
-}
-
-/* Burger-menuen skjules som standard */
-.menu {
-    background-color: white;
-    position: fixed;
-    top: 20;
-    right: 20;
-    width: 200px;
-    height: 20px;
-    display: box; 
-    padding-top: 60px;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    color: black;
+    display: none; /* Skjult på store skærme */
 }
 
 /* Menu links */
-.menu ul {
+.menu {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: 20px; /* Mellemrum mellem links */
 }
 
-.menu ul li {
-    padding: 15px;
-    text-align: center;
-}
-
-.menu ul li a {
+/* Menu links styling */
+.menu li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-/* Når checkboxen er tjekket, vis menuen */
-#toggle-menu:checked + .burger-icon + .menu {
-    display: block;
+/* Gør menuen responsiv */
+@media (max-width: 768px) {
+    /* Skjuler menuen og viser burger-ikonet */
+    .menu {
+        display: none; /* Skjul menuen som standard */
+        position: fixed;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 200px;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+        z-index: 9;
+    }
+
+    .burger-icon {
+        display: block; /* Vis burger-ikonet på små skærme */
+    }
+
+    /* Når checkbox er aktiveret, vis menuen */
+    #toggle-menu:checked + .burger-icon + .menu {
+        display: flex;
+    }
+
+    /* Menu links styling på mobil */
+    .menu li {
+        padding: 15px;
+        text-align: left;
+    }
+
+    .menu li a {
+        color: black;
+    }
 }
 
-/* Tilføj lidt spacing omkring burger-ikonet, så det kan klikkes */
-.burger-icon i {
-    padding: 10px;
-    background-color: black;
-    border-radius: 5px;
+/* Tilføj ekstra spacing under headeren for indholdet */
+.content {
+    padding-top: 80px;
 }
-
 
 .forside-billeder  {
    /* Styling af billederne */

@@ -11,6 +11,14 @@ body {
     padding: 0;
 }
 
+/* Logo styling */
+.logo{
+    max-width: 40%; /* Juster logoets bredde */
+    height: auto;
+    position:fixed
+}
+
+
 h3 {
     color: white; /* Ændrer farven til en blå nuance */
     font-family: 'Playfair display', sans-serif; /* Ændrer fonten til Arial */
@@ -110,6 +118,25 @@ h5 {
 .content {
     padding-top: 80px;
 }
+
+
+
+/* Indkøbskurv styling */
+.shopping-cart {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
 
 .forside-billeder  {
    /* Styling af billederne */

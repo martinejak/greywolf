@@ -1,64 +1,154 @@
 {    box-sizing: border-box;}
-body{  
-    background-color: black
-}
 
 .header { 
-    background-color: aliceblue; 
-    height: 75px;
+    background-color: rgb(255, 255, 255); 
+    height: 200px;
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #000000;
     margin: 0;
     padding: 0;
 }
 
-/* Burger Menu Style */
-.burger-menu {
-    width: 35px;
+h3 {
+    color: white; /* Ændrer farven til en blå nuance */
+    font-family: 'Playfair display', sans-serif; /* Ændrer fonten til Arial */
+    font-size: 36px; /* Ændrer fontstørrelsen */
+    font-weight: bold; /* Gør fonten fed */
+}
+h5 {
+    color: white; /* Ændrer farven til en blå nuance */
+    font-family: 'Playfair display', sans-serif; /* Ændrer fonten til Arial */
+    font-size: 36px; /* Ændrer fontstørrelsen */
+    font-weight: bold; /* Gør fonten fed */
+}
+
+* Skjul checkbox - bruges til toggling */
+#toggle-menu {
+    display: contents;
+}
+
+/* Skjul checkbox */
+#toggle-menu {
+    display: none;
+}
+
+/* Styling af burger-ikon */
+.burger-icon {
+    font-size: 30px;
     cursor: pointer;
-    margin: 20px;
+    color: black;
+    display: none; /* Skjult på store skærme */
 }
 
-.line {
-    width: 100%;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-}
-
-/* Menu Styling */
+/* Menu links */
 .menu {
-    display: none; /* Skjul menuen som standard */
-    background-color: white;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.menu ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: 20px; /* Mellemrum mellem links */
 }
 
-.menu ul li {
-    padding: 15px;
-    text-align: center;
-}
-
-.menu ul li a {
+/* Menu links styling */
+.menu li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-.menu ul li:hover {
-    background-color: #ddd;
+/* Gør menuen responsiv */
+@media (max-width: 768px) {
+    /* Skjuler menuen og viser burger-ikonet */
+    .menu {
+        display: none; /* Skjul menuen som standard */
+        position: fixed;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 200px;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+        z-index: 9;
+    }
+
+    .burger-icon {
+        display: block; /* Vis burger-ikonet på små skærme */
+    }
+
+    /* Når checkbox er aktiveret, vis menuen */
+    #toggle-menu:checked + .burger-icon + .menu {
+        display: flex;
+    }
+
+    /* Menu links styling på mobil */
+    .menu li {
+        padding: 15px;
+        text-align: left;
+    }
+
+    .menu li a {
+        color: black;
+    }
+}
+
+/* Tilføj ekstra spacing under headeren for indholdet */
+.content {
+    padding-top: 80px;
+}
+
+.forside-billeder  {
+   /* Styling af billederne */
+
+    width: 100%; /* Tilpasset bredde */
+    height: auto;
+    display: inline-block;
+    margin-right: 50px; /* Mellemrum mellem billeder */
+}
+
+/* Sørg for at det sidste billede ikke har margin til højre */
+.forside-billeder {
+    margin-right: 10;
+
+}
+/* Styling af containeren til billedserien */
+.image-slider {
+    width: 100%; /* Fuldbredde */
+    overflow: hidden; /* Skjul scrollbaren */
+    white-space: nowrap; /* Sørg for billederne vises på én række */
+    position: relative;
+    border: 2px solid #ddd;
+}
+
+/* Containeren, der holder billederne */
+.image-container {
+    display: inline-block;
+    animation: scroll 20s linear infinite; /* Rul i 20 sekunder i en loop */
+}
+
+/* Styling af billederne */
+.image-container img {
+    width: 50%; /* Tilpas efter dine behov */
+    height: auto%
+    display: inline-block; /* Sæt billederne ved siden af hinanden */
+    margin-right: 5px; /* Afstand mellem billeder */
+    padding: 20px;
+    background-color: grey;
+
+}
+
+/* Animation for scroll */
+@keyframes scroll {
+    -100% {
+        transform: translateX(100%); /* Start uden for skærmen */
+    }
+    100% {
+        transform: translateX(-100%); /* Slut uden for skærmen på den anden side */
+    }
 }
 
 /* billeder */

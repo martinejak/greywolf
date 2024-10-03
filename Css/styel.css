@@ -1,7 +1,7 @@
 {    box-sizing: border-box;}
 
 header { 
-        height: 100px;
+    height: 400px;
     display: flex;
     justify-content: space-between; /* Fordeler elementer jævnt */
     align-items: center; /* Centrér vertikalt */
@@ -10,7 +10,9 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 10;
+    align-items: center; /* Vertikal centrering */
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: #000000;
@@ -25,7 +27,7 @@ body {
     justify-content: center; /* Horisontal centrering af logoet */
     position: absolute;
     top: auto;
-    left: 150px
+    display: flex;
 }
 
 
@@ -49,7 +51,7 @@ h5 {
 
 /* Styling af burger-ikon */
 .burger-icon {
-    font-size: 30px;
+    font-size: 150px;
     cursor: pointer;
     color: black; /* Sort farve til burger-ikonet */
     position: absolute;
@@ -133,7 +135,7 @@ h5 {
 
 /* Indkøbskurv styling */
 .shopping-cart {
-    font-size: 30px;
+    font-size: 150px;
     color: black;
     cursor: pointer;
     position: relative;

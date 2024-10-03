@@ -2,14 +2,15 @@
 
 header { 
     height: 400px;
+    max-width: 100%;
     display: flex;
-    justify-content: space-between; /* Fordeler elementer jævnt */
+    justify-content: space-between; 
     align-items: center; /* Centrér vertikalt */
     padding: 10px 20px;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-    z-index: 10;
+    z-index: 50;
     align-items: center; /* Vertikal centrering */
 }
 
@@ -22,43 +23,44 @@ body {
 
 /* Logo styling */
 .logo{
-    max-width: 60%; /* Juster logoets bredde */
+    max-width: 60%; 
     height: auto;
     justify-content: center; /* Horisontal centrering af logoet */
     position: absolute;
     top: auto;
     display: flex;
 }
-
-
+h1 {
+    color: white; 
+    font-family: 'Playfair display', sans-serif; 
+    font-size: 36px; 
+    font-weight: bold; 
+}
+h2 {
+    color: white; 
+    font-family: 'Playfair display', sans-serif; 
+    font-size: 36px; 
+    font-weight: bold; 
+}
 h3 {
-    color: white; /* Ændrer farven til en blå nuance */
-    font-family: 'Playfair display', sans-serif; /* Ændrer fonten til Arial */
-    font-size: 36px; /* Ændrer fontstørrelsen */
-    font-weight: bold; /* Gør fonten fed */
+    color: white; 
+    font-family: 'Playfair display', sans-serif; 
+    font-size: 36px; 
+    font-weight: bold; 
+}
+h4 {
+    color: white; 
+    font-family: 'Playfair display', sans-serif; 
+    font-size: 36px; 
+    font-weight: bold; 
 }
 h5 {
-    color: white; /* Ændrer farven til en blå nuance */
-    font-family: 'Playfair display', sans-serif; /* Ændrer fonten til Arial */
-    font-size: 36px; /* Ændrer fontstørrelsen */
-    font-weight: bold; /* Gør fonten fed */
+    color: white;
+    font-family: 'Playfair display', sans-serif; 
+    font-size: 36px; 
+    font-weight: bold; 
 }
 
-/* Skjul checkbox - bruges til toggling */
-#toggle-menu {
-    display: none;
-}
-
-/* Styling af burger-ikon */
-.burger-icon {
-    font-size: 150px;
-    cursor: pointer;
-    color: black; /* Sort farve til burger-ikonet */
-    position: absolute;
-    top: 40px;   /* Placeret 20px fra toppen */
-    left: 20px;  /* Placeret 20px fra venstre */
-    z-index: 2;  /* Sørg for at den vises over andre elementer */
-}
 /* Menu styling */
 .menu {
     background-color: white;
@@ -67,7 +69,7 @@ h5 {
     left: 0;
     width: 200px;
     height: 30vh;
-    display: none; /* Skjul menuen som standard */
+    display: none; 
     padding-top: 60px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
@@ -78,7 +80,7 @@ h5 {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px; /* Mellemrum mellem links */
+    gap: 20px; 
 }
 
 /* Menu links styling */
@@ -89,8 +91,8 @@ h5 {
 }
 
 /* Gør menuen responsiv */
-@media (max-width: 768px) {
-    /* Skjuler menuen og viser burger-ikonet */
+@media (max-width: 768px) 
+    
     .menu {
         display: none; /* Skjul menuen som standard */
         position: fixed;
@@ -106,35 +108,11 @@ h5 {
         z-index: 9;
     }
 
-    .burger-icon {
-        display: block; /* Vis burger-ikonet på små skærme */
-    }
-
-    /* Når checkbox er aktiveret, vis menuen */
-    #toggle-menu:checked + .burger-icon + .menu {
-        display: flex;
-    }
-
-    /* Menu links styling på mobil */
-    .menu li {
-        padding: 15px;
-        text-align: left;
-    }
-
-    .menu li a {
-        color: black;
-    }
-}
-
-/* Tilføj ekstra spacing under headeren for indholdet */
-.content {
-    padding-top: 80px;
-}
 
 
 
 /* Indkøbskurv styling */
-.shopping-cart {
+ fa-solid fa-basket-shopping {
     font-size: 150px;
     color: black;
     cursor: pointer;
@@ -153,37 +131,37 @@ h5 {
 .forside-billeder  {
    /* Styling af billederne */
 
-    width: 100%; /* Tilpasset bredde */
+    width: 100%; 
     height: auto;
     display: inline-block;
-    margin-right: 50px; /* Mellemrum mellem billeder */
+    margin-right: 50px; 
 }
 
-/* Sørg for at det sidste billede ikke har margin til højre */
+/* Forside billeder*/ 
 .forside-billeder {
-    margin-right: 10;
+        max-width: 100%;
+        height: auto;
+    
 
 }
-/* Styling af containeren til billedserien */
+
 .image-slider {
-    width: 100%; /* Fuldbredde */
+    width: 100%; 
     overflow: hidden; /* Skjul scrollbaren */
-    white-space: nowrap; /* Sørg for billederne vises på én række */
+    white-space: nowrap; /*  på én række */
     position: relative;
     border: 2px solid #ddd;
 }
 
-/* Containeren, der holder billederne */
 .image-container {
     display: inline-block;
-    animation: scroll 20s linear infinite; /* Rul i 20 sekunder i en loop */
+    animation: scroll 20s linear infinite; /* Rul i 20 sekunder*/
 }
 
-/* Styling af billederne */
 .image-container img {
-    width: 50%; /* Tilpas efter dine behov */
+    width: 50%; 
     height: auto%
-    display: inline-block; /* Sæt billederne ved siden af hinanden */
+    display: inline-block; /* billederne ved siden af hinanden */
     margin-right: 5px; /* Afstand mellem billeder */
     padding: 20px;
     background-color: grey;
@@ -200,6 +178,29 @@ h5 {
     }
 }
 
+.img-bæredygtighede {
+
+    position: relative; 
+    width: 300px; 
+    margin: auto; 
+}
+.img-bæredygtighede img{
+        width: 100%; /* Gør billedet responsivt */
+        height: auto; /* Bevar proportionerne */
+    }
+
+.text-overlay {
+    position: absolute; /* Absolut positionering i forhold til den nærmeste positionerede forælder */
+    top: 50%; /*  vertikalt */
+    left: 50%; /* horisontalt */
+    transform: translate(-50%, -50%); /* Justerer til midten */
+    color: rgb(172, 27, 27); 
+    font-size: 10px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Giver en skyggeeffekt for bedre læsbarhed */
+}
+
+
+
 /* billeder */
 
 img{
@@ -211,10 +212,42 @@ img{
     object-fit: cover;
 }
 
+/*mail*/
+.email-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.email-form input[type="email"] {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 40px;
+}
+
+.email-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.email-form input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
 /* footer */
 
 footer{
-    background-color: black;
+    background-color: rgb(90, 88, 88);
+    height: 400px;
     color: rgb(255, 255, 255);
     font-size: 2rem;
     display: flex;
@@ -222,3 +255,4 @@ footer{
     align-items: center;
     padding: 10px;
 }
+

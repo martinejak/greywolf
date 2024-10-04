@@ -378,7 +378,7 @@ input[type="submit"] {
     padding: 12px;
 }
 
-/* Product container styling */
+/* Denice's CSS: Product container styling */
 .product-container {
     position: relative; /* Position relative for absolute positioning of children */
     width: 393px;
@@ -443,13 +443,134 @@ input[type="submit"] {
     right: 10px; /* Distance from right */
 }
 
-/* produktkategorisidens billeder */
+/* Global styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ 
+/* White text box styling */
+.info-box {
+    width: 393px;
+    height: 297px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black; /* Black stroke */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ 
+/* General text styles */
+p {
+    margin: 0;
+    color: black;
+}
+ 
+/* Product info */
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+ 
+.title {
+    font-size: 14px;
+    font-weight: 400;
+}
+ 
+.organic-cotton {
+    font-size: 10px;
+    font-weight: 900;
+}
+ 
+.price {
+    font-size: 12px;
+    font-weight: 400;
+}
+ 
+/* Size section */
+.size-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+ 
+.label {
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+ 
+.size-box {
+    width: 29.92px;
+    height: 20.21px;
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+ 
+/* Color section */
+.color-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+ 
+.color-circle {
+    width: 22.79px;
+    height: 22.79px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+ 
+/* Add to Cart button */
+.add-to-cart-btn {
+    width: 291px;
+    height: 73.34px;
+    background-color: orange;
+    border: none;
+    border-radius: 17px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+/* Martine's CSS: Produktkategorisidens billeder */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
+#faceicon{
+    width: 10%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
   body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -477,7 +598,6 @@ input[type="submit"] {
     }
   }
 
-
 .product-card {
     width: 200px;
     border: 1px solid #ccc;
@@ -491,7 +611,6 @@ input[type="submit"] {
 .product-image img {
     width: 100%;
     border-radius: 8px;
-    border: 2px solid #00f; /* Blå kant som i billedet */
 }
 
 .product-info {
@@ -500,12 +619,35 @@ input[type="submit"] {
 
 .product-info h3 {
     font-size: 18px;
+    font-family:"Playfair Display", serif;
     margin-bottom: 5px;
+    color: #000000;
+}
+
+header > main{
+    border-bottom: 5px solid orange;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.produktkategori-overskrift {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:100;
+  font-style: normal;
+  color: #000000;
+  justify-content: center;
+  box-sizing: border-box;
+  border-top: solid #000000;
+  border-bottom: solid black;
+  border-right: #000000;
+  border:black ;
 }
 
 .product-info p {
     font-size: 16px;
     margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
 }
 
 .color-options {
@@ -529,6 +671,7 @@ input[type="submit"] {
     padding: 10px;
     border-radius: 5px;
     font-size: 14px;
+    font-family: "Playfair Display", serif;
     cursor: pointer;
 }
 

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bag om Grey Wolf</title>
+    <script src="https://kit.fontawesome.com/4a444581fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Css/styel.css">
+</head>
+<header>
+    
+    <a href="index.html"></a> <img class="logo" src="img/2024 - Grey wolf logo text and icon - Denice Busk Nielsen.png" alt="Logo"></a>
+    <i class="fa-solid fa-basket-shopping"></i>
+   
+   
+   <!-- Burger Menu Toggle Checkbox -->
+   <input type="checkbox" id="toggle-menu">
+
+   <!-- Label with Font Awesome Icon -->
+   <label for="toggle-menu" class="burger-icon">
+       <i class="fas fa-bars"></i> <!-- Burger icon fra Font Awesome -->
+   </label>
+
+   <!-- Menu Links -->
+   <nav class="menu">
+        <ul>
+               <li><a href="Dame.html">Dame</a></li>
+               <li><a href="Mand">Mand</a></li>
+               <li><a href="Tasker og Hatte">Tasker og Hatter</a></li>
+               <li><a href="Bag om grey Wolf">Bag om Grey Wolf</a></li>
+               <li><a href="Omdan dit til tøj til noget nyt">Omdan dit tøj til noget nyt</a></li>
+           </ul>
+       </nav></div>
+   
+        
+    </header>
+    <Body>
+       
+<!--forsidebillede-->
+        <div>
+       <img src="img/Iceland beach walker.JPG" class=>
+    <div class="hero-image">
+       
+        <h4>Hos Grey Wolf har vi skabt en kollektion, der består af tidløse og basic styles, som kan bruges sæson efter sæson. Kollektionen opdateres sjældent, fordi vi fokuserer på holdbare designs, der kan blive en fast del af garderoben. Vi bestræber os på at levere bæredygtigt, samt tøj i høj kvalitet.</h4>
+
+      
+    
+<div>
+
+
+<!-- Slider container -->
+<div class="slider">
+    <!-- Billede 1 med tekst -->
+    <div class="slides fade">
+        <img src="img/Iceland reklame.jpg" style="width:100%">
+        <div class="text"><h5>Bæredygtighed</h5>Bæredygtighed er vigtigt for os og miljøet. Vi ønsker at sætte mere fokus på bæredygtighed hos flere forbrugere, når det kommer til tøj. Med vores basic look stræber vi efter at få flere til at vælge bæredygtigt tøj.</div>
+    </div>
+
+    <!-- Billede 2 med tekst -->
+    <div class="slides fade">
+        <img src="img/bambus-kan-blive-meget-hoje (1).webp" style="width:100%">
+        <div class="text"><h5>Materialer:</h5>Alt vores tøj er produceret i økologisk bomuld og bambusfibre. Bambusplanten er en af de planter som er allermest bæredygtig, da den kan vokse helt fint uden sprøjtegift og kunstvanding</div>
+    </div>
+
+    <!-- Billede 3 med tekst -->
+    <div class="slides fade">
+        <img src="img/Linoliums tryk ulv.JPG" style="width:100%">
+        <div class="text"><h5>Logo tryk:</h5>Vi bruger linoleumstryk til at trykke vores logo på tøjet, for at kunne være mere bæredigte. Farver kommer fra naturen og er uden kemiske tilsætningsstoffer. </div>
+    </div>
+
+    <!-- Billede 4 med tekst -->
+    <div class="slides fade">
+        <img src="img/Leeds-list.com sewing.JPG" style="width:100%">
+        <div class="text"><h5>Arbjedsvilkår:</h5>Vi stræber efter at altid at have gode arbejdsvilkår for vores ansatte. Alle der er en del af vores produktion er vigtige. De fortjener livskvalitet og at blive værtsat for deres arbejde. </div>
+    </div>
+
+    <!-- Forrige og næste knapper -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    /* Funktion til automatisk at skifte slides */
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex - 1].style.display = "block";  
+        setTimeout(showSlides, 9000); 
+    }
+
+    /* Funktion til manuel skift af slides */
+    function plusSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        slideIndex += n;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        if (slideIndex < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+</script>
+
+    
+        
+ 
+    <div>
+    <img src="img/Sustainable fashion.JPG"> 
+ </div>
+     
+        
+       
+    
+    <footer>
+        <div class="footer">
+            <!-- Logo over knapperne -->
+            <div class="footer-logo">
+        <a href="index.html"></a> <img class="footer-logo" src="img/2024 - Grey wolf logo text and icon - Denice Busk Nielsen.png" alt="Logo"></a>
+        
+        <div class="footer-buttons">
+    
+<!-- Knap 1 -->
+     <a href="Bag om Grey Wolf.html">Bag om Grey Wolf</a>
+<!-- Knap 2 -->
+    <a href="#">Kontakt Os</a>
+        </div> 
+             <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </footer>
+</body>
+</html>

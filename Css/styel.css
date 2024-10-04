@@ -303,9 +303,9 @@ input[type="submit"] {
 /* footer */
 
 footer{
-    background-color: rgb(90, 88, 88);
+    background-color: rgb(255, 255, 255);
     
-    color: rgb(255, 255, 255);
+    color: rgb(7, 7, 7);
     font-size: 2rem;
     display: flex;
     justify-content: baseline
@@ -326,7 +326,7 @@ footer{
     /* Knap styling */
     .footer-buttons a {
         background-color: #b9b7b7; 
-        color: rgb(78, 41, 182);
+        color: rgb(211, 98, 5);
         padding: 10px 50px;
         text-decoration: none;
         font-size: 16px;
@@ -338,6 +338,7 @@ footer{
     }
     /* Styling til logoet */
     .footer-logo {
+        height: auto;
         margin-bottom: 20px;}
 
 /* SoMe ikoner container */
@@ -350,10 +351,10 @@ footer{
 /* SoMe ikoner styling */
 .footer-some a {
     font-size: 24px;
-    color: white;
+    color: rgb(15, 9, 9);
     text-decoration: none;
     padding: 10px;
-    background-color: #444;
+    background-color: #da7503;
     border-radius: 50%; /* Runde ikoner */
     width: 50px;
     height: 50px;
@@ -364,4 +365,4 @@ footer{
 
 /* Hover-effekt på SoMe ikoner */
 .footer-some a:hover {
-    background-color: #555;
+    background-color: #df7803;

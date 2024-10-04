@@ -378,7 +378,164 @@ input[type="submit"] {
     padding: 12px;
 }
 
+/* Product container styling */
+.product-container {
+    position: relative; /* Position relative for absolute positioning of children */
+    width: 393px;
+    height: 571px;
+    margin-top: 20px; /* Space from the navigation box */
+}
+ 
+/* Product image */
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the area without stretching */
+}
+ 
+/* Text on the left side */
+.product-text {
+    position: absolute; /* Position text absolutely within the container */
+    left: 27.9px; /* Margin from left */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for exact vertical centering */
+    font-family: 'Playfair Display', serif; /* Playfair Display font */
+    font-weight: bold; /* Bold text */
+    font-size: 14px; /* Font size 14px */
+    color: white; /* White text color */
+}
+ 
+/* Like button styling */
+.like-button {
+    position: absolute;
+    top: 10px; /* Distance from top */
+    right: 10px; /* Distance from right */
+    width: 24px; /* Width of heart icon */
+    height: 24px; /* Height of heart icon */
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+ 
+/* Heart icon */
+.heart {
+    color: black; /* Default color */
+    font-size: 24px; /* Icon size */
+}
+ 
+/* Arrow buttons styling */
+.arrow {
+    position: absolute; /* Position arrows absolutely */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: white; /* White arrow color */
+    font-size: 24px; /* Arrow size */
+}
+ 
+.arrow-left {
+    left: 10px; /* Distance from left */
+}
+ 
+.arrow-right {
+    right: 10px; /* Distance from right */
+}
 
+/* produktkategorisidens billeder */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .product-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* To kolonner */
+    gap: 10px; /* Afstand mellem billederne */
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsiv styling */
+  @media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr; /* En kolonne på mindre skærme */
+    }
+  }
+
+
+.product-card {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+.product-image img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #00f; /* Blå kant som i billedet */
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.color-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #999;
+}
+  
 /* footer */
 
 footer{

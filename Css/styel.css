@@ -102,6 +102,7 @@ h5 {
     display: none; 
     padding-top: 60px;
     box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    
 }
 
 /* Menu links */
@@ -444,51 +445,76 @@ input[type="submit"] {
 }
 
 
-
 /* Martine's CSS: Produktkategorisidens billeder */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
   }
-  
-#faceicon{
-    width: 10%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
+  body {
+    background-color: #000; /* Sort baggrund */
+    color: #fff;
+    padding: 0;
+    margin: 0;
 }
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
-  }
-  
+.header {
+        background-color: #fff;
+        padding: 0 20px;
+        text-align: center;
+        color: #000;
+        position: sticky;
+        top: 0;
+        display: grid;
+        
+    }
+    
+.header .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}
+
+.produktkategori-overskrift{
+    background-color: white;
+    font-size: 20px; /* Justér størrelsen på teksten */
+    text-align: center; /* Centrer teksten */
+    border: 3px solid black; /* Sort ramme rundt om teksten */
+    display:flexbox;
+    padding: 10px 20px; /* Lidt plads mellem teksten og rammen */
+    margin: 20px auto; /* Midterjustér og tilføj luft */
+}
+ /* logo */
+
+#faceicon{
+    width: 10%;
+    height: 40px;
+    height: auto;
+    display: block;
+   
+    z-index: 1;
+    margin: 0 auto;
+}
+/* Produkt galleri */
   .product-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* To kolonner */
     gap: 10px; /* Afstand mellem billederne */
-  }
-  
+    padding: 20px;
+  } 
   .gallery-item img {
     width: 100%;
+    max-width: 300%;
     height: auto;
     display: block;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
   }
-  
-  /* Responsiv styling */
-  @media (max-width: 768px) {
-    .gallery {
-        grid-template-columns: 1fr; /* En kolonne på mindre skærme */
-    }
-  }
-
-.product-card {
+  .product-card {
     width: 200px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -501,37 +527,37 @@ input[type="submit"] {
 .product-image img {
     width: 100%;
     border-radius: 8px;
-}
+    display: block; /* Sørg for, at billedet opfører sig som et blok-element */
+    max-width: 100%; /* Undgå, at billedet bliver for stort */
+    height: auto;
+    }
 
+p {
+    font-size: 16px; /* Standard */
+    color: #000000; /* Text color */
+    margin: 10px;
+}
 .product-info {
     margin-top: 10px;
+    text-align: center; 
 }
-
-.product-info h3 {
-    font-size: 18px;
+.product-info h3, product-info p {
+    font-size: 16px;
     font-family:"Playfair Display", serif;
     margin-bottom: 5px;
     color: #000000;
 }
-
-header > main{
-    border-bottom: 5px solid orange;
-    padding: 10px 20px;
-    text-align: center;
-}
-
 .produktkategori-overskrift {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight:100;
-  font-style: normal;
-  color: #000000;
-  justify-content: center;
-  box-sizing: border-box;
-  border-top: solid #000000;
-  border-bottom: solid black;
-  border-right: #000000;
-  border:black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid black;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: white;
+    color: #000;
 }
 
 .product-info p {
@@ -555,20 +581,58 @@ header > main{
     cursor: pointer;
 }
 
+.fa-heart{
+    flex-shrink: 0; /* Forhindrer ikonet i at krympe */
+    font-size: 24px; /* Default size for larger screens */
+    color: #000; /* Black color by default */
+    }
+
 .add-to-cart {
     background-color: #ccc;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 50px;
     font-size: 14px;
     font-family: "Playfair Display", serif;
     cursor: pointer;
+    display: inline;
 }
 
 .add-to-cart:hover {
     background-color: #999;
+    color: #0056b3;
 }
-  
+
+  /* Responsiv styling */
+  @media (max-width: 600px) 
+    .gallery {
+        grid-template-columns: 1fr; /* En kolonne på mindre skærme */
+    }
+    .produktkategori-overskrift {
+        font-size: 18px; /* Gør overskriften lidt mindre */
+    }
+    .product-card {
+        width: 100%; /* Fuld bredde på mindre skærme */
+        margin-bottom: 20px;
+    }
+    .add-to-cart {
+        font-size: 12px; /* Reducer knapstørrelsen på små skærme */
+        padding: 10px;
+    }
+    .fa-regular.fa-heart {
+        font-size: 18px; /* Sørg for, at ikonet vises tydeligt */
+        margin-top: 10px;
+        flex-shrink: 0; /* Forhindrer ikonet i at krympe */
+        color: #333; /* Grå farve for mindre skærme */
+    }
+    p {
+        font-size: 14px; /* Mindre tekststørrelse på små skærme */
+        margin: 5px; /* Mindre margener */
+    }
+   
+    
+
 /* footer */
 
 footer{
@@ -580,7 +644,6 @@ footer{
     justify-content: baseline
     align-items: center;
     padding: 10px;}
-
 
 
     /* Container til knapperne */
@@ -616,6 +679,7 @@ footer{
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
 
 /* SoMe ikoner styling */
 .footer-some a {
@@ -635,4 +699,4 @@ footer{
 /* Hover-effekt på SoMe ikoner */
 .footer-some a:hover {
     background-color: #f38406;
-
+}

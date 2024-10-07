@@ -693,8 +693,13 @@ input[type="checkbox"] {
 }
 /* Heart icon */
 .heart {
-    color: rgb(226, 10, 10); 
-    font-size: 24px; 
+    color: rgb(226, 10, 10); /* Farven når ikke liket */
+    font-size: 24px;
+    transition: color 0.3s ease; /* Glidende overgang */
+}
+/* Når checkboxen er tjekket (liket) */
+input[type="checkbox"]:checked + label .heart {
+    color: #e74c3c; /* Rød farve når liket */
 }
  
 /* Arrow buttons styling */

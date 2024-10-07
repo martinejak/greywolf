@@ -712,7 +712,7 @@ p1 {
 }
 
 .info-box1{
-    position: absolute; 
+    position: auto%; 
     width: auto%; 
 }
 .info-box1:first-child {

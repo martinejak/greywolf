@@ -555,14 +555,91 @@ footer{
         margin-bottom: 20px;}
 
 
+
+/* Stil for boks */
+.delivery-box {
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px;
+    border: 2px solid #0e0d0d; 
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    text-align: center;
+}
+
+
+/* Stil for tekst */
+.delivery-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+
+/* Billedcontainer */
+.image-container2 {
+    display: flex;
+    justify-content: space-around; /
+    align-items: center;
+}
+
+
+/* Stil for billederne */
+.delivery-image {
+    width: 100px; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+.star-box h4 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info-box1{
+    position: absolute;
+    width: auto%;
+}
+.info-box1:first-child {
+    height: 100%;
+    width: auto;
+    z-index: 1;
+    left:30px;
+    top:1050 px;
+}
+.product-image:last-child {
+    top: 30px; px;
+    left: 180px;
+    z-index: 0; /
+}
+
+
+
+
+        
+
 /* Denice's CSS: Product container styling */
 .product-container {
     position: relative; /* Position relative for absolute positioning of children */    width: 393px;
     margin-top: 20px; /* Space from the navigation box */
     height: auto;
     width: auto;
-    margin-bottom: 20%;
-}
+    }
  
 /* Product image */
 .product-image {

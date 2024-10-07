@@ -573,6 +573,122 @@ button {
 .arrow-right {
     right: 10px; /* Distance from right */
 }
+/* White text box styling */
+.info-box1 {
+    width: 393px;
+    height: 297px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 1px solid black; /* Black stroke */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ 
+/* General text styles */
+p1 {
+    margin: 0;
+    color: black;
+}
+ 
+/* Product info */
+.product-info1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+ 
+.title1 {
+    font-size: 14px;
+    font-weight: 400;
+}
+ 
+.organic-cotton1 {
+    font-size: 10px;
+    font-weight: 900;
+}
+ 
+.price1 {
+    font-size: 12px;
+    font-weight: 400;
+}
+ 
+/* Size section */
+.size-section1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+ 
+.label1 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+ 
+.size-box1 {
+    width: 29.92px;
+    height: 20.21px;
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+ 
+/* Color section */
+.color-section1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+ 
+.color-circle1 {
+    width: 22.79px;
+    height: 22.79px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+ 
+/* Add to Cart button */
+.add-to-cart-btn1 {
+    width: 291px;
+    height: 73.34px;
+    background-color: orange;
+    border: none;
+    border-radius: 17px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.info-box1{
+    position: absolute; 
+    width: auto%; 
+}
+.info-box1:first-child {
+    height: 100%;
+    width: auto;
+    z-index: 0; 
+    left:30px;
+    top:1050 px;
+}
+.product-image:last-child {
+    top: 30px; px; 
+    left: 180px; 
+    z-index: 1; /
+}
 
 
 /* Martine's CSS: Produktkategorisidens billeder */

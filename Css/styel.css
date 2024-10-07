@@ -551,12 +551,14 @@ footer{
 .product-container {
     position: relative; /* Position relative for absolute positioning of children */    width: 393px;
     margin-top: 20px; /* Space from the navigation box */
+    height: auto;
+    width: auto;
 }
  
 /* Product image */
 .product-image {
-    width: 100%;
     height: auto;
+    
     object-fit: cover; /* Cover the area without stretching */
 }
  
@@ -575,11 +577,11 @@ footer{
 /* Like button styling */
 .like-button {
     position: absolute;
-    top: 10px; /* Distance from top */
+    top: 20px; /* Distance from top */
     right: 10px; /* Distance from right */
-    width: 24px; /* Width of heart icon */
-    height: 24px; /* Height of heart icon */
-    background-color: white;/* Transparent background */
+    width: 26px; /* Width of heart icon */
+    height: 26px; /* Height of heart icon */
+    background-color: transparent;/* Transparent background */
     border: none; /* No border */
     color: white;
     cursor: pointer; /* Pointer cursor on hover */
@@ -616,7 +618,6 @@ input[type="checkbox"] {
 }
 /* White text box styling */
 .info-box1 {
-    width: 393px;
     height: 297px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;

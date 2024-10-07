@@ -667,11 +667,12 @@ p {
     color: #000000; /* Text color */
     margin: 10px;
 }
-.product-info {
+.product-info, a {
     margin-top: 10px;
     text-align: center; 
+    text-decoration: none;
 }
-.product-info h3, product-info p {
+.product-info h3, product-info p, a {
     font-size: 16px;
     font-family:"Playfair Display", serif;
     margin-bottom: 5px;

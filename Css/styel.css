@@ -563,7 +563,7 @@ footer{
     padding: 20px;
     border: 2px solid #0e0d0d; 
     border-radius: 10px; 
-    background-color: #f9f9f9; 
+    background-color: #141414; 
     text-align: center;
 }
 
@@ -589,6 +589,9 @@ footer{
     width: 100px; 
     height: auto; 
     border-radius: 10px;
+}
+.star-box{
+    color: gray;
 }
 
 .star-box h4 {

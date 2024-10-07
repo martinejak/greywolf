@@ -34,29 +34,7 @@ body {
 }
 
 
- /* Skjuler checkboxen */
- input[type="checkbox"] {
-    display: none;
-}
-
-/* Styling af like-knappen */
-.like-button {
-    font-size: 32px;
-    color: #d8d4d4; /* Standard farve (ikke-liket) */
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-/* Når checkboxen er "checked" (liket), ændres farven */
-input[type="checkbox"]:checked + label .like-button {
-    color: red; /* Farven skifter til rød når liket */
-}
-
-
-
-
-
-/* Logo styling */
+ /* Logo styling */
 .logo{
     width: 70%; 
     height: auto;
@@ -67,7 +45,7 @@ input[type="checkbox"]:checked + label .like-button {
 /*logo på undersider*/
 .logoside {
     max-width: 60px;
-    height:auto
+    height:auto;
     justify-content: center;
 }
 h1 {

@@ -42,7 +42,7 @@ body {
 /* Styling af like-knappen */
 .like-button {
     font-size: 32px;
-    color: #ccc; /* Standard farve (ikke-liket) */
+    color: #d8d4d4; /* Standard farve (ikke-liket) */
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -51,7 +51,6 @@ body {
 input[type="checkbox"]:checked + label .like-button {
     color: red; /* Farven skifter til rød når liket */
 }
-
 
 
 
@@ -572,16 +571,14 @@ footer{
 
 /* Denice's CSS: Product container styling */
 .product-container {
-    position: relative; /* Position relative for absolute positioning of children */
-    width: 393px;
-    height: 571px;
+    position: relative; /* Position relative for absolute positioning of children */    width: 393px;
     margin-top: 20px; /* Space from the navigation box */
 }
  
 /* Product image */
 .product-image {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover; /* Cover the area without stretching */
 }
  
@@ -604,14 +601,19 @@ footer{
     right: 10px; /* Distance from right */
     width: 24px; /* Width of heart icon */
     height: 24px; /* Height of heart icon */
-    background-color: transparent; /* Transparent background */
+    background-color: white;/* Transparent background */
     border: none; /* No border */
+    color: white;
     cursor: pointer; /* Pointer cursor on hover */
+}
+/* Skjuler checkboxen */
+input[type="checkbox"] {
+    display: none;
 }
  
 /* Heart icon */
 .heart {
-    color: black; /* Default color */
+    color: rgb(226, 10, 10); /* Default color */
     font-size: 24px; /* Icon size */
 }
  

@@ -2,7 +2,7 @@
     box-sizing: border-box;}
 
 header { 
-    height: 150px;
+    height: 100px;
     max-width: none;
     display: flex;
     justify-content: center; 
@@ -36,7 +36,7 @@ body {
 
  /* Logo styling */
 .logo{
-    width: 70%; 
+    width: 60%; 
     height: auto;
     justify-content: center; 
     top: auto;
@@ -91,7 +91,7 @@ h5 {
     cursor: pointer;
     color: rgb(0, 0, 0);
     position: absolute;
-    top: 55px;
+    top: 25px;
     left: 5px;
     z-index: 2;
 }
@@ -149,6 +149,14 @@ h5 {
 }
 .hero-button:hover {
     background-color: #131212;
+}
+
+/* Styling af kurv-ikonet */
+.cart-icon {
+    font-size: 24px;
+    color: #333; 
+    cursor: pointer;
+    left: 100px;
 }
 
 /*grafik på billeder*/
@@ -553,12 +561,12 @@ footer{
     margin-top: 20px; /* Space from the navigation box */
     height: auto;
     width: auto;
+    margin-bottom: 20%;
 }
  
 /* Product image */
 .product-image {
     height: auto;
-    
     object-fit: cover; /* Cover the area without stretching */
 }
  
@@ -590,7 +598,6 @@ footer{
 input[type="checkbox"] {
     display: none;
 }
- 
 /* Heart icon */
 .heart {
     color: rgb(226, 10, 10); /* Default color */
@@ -722,14 +729,14 @@ p1 {
 .info-box1:first-child {
     height: 100%;
     width: auto;
-    z-index: 0; 
+    z-index: 1; 
     left:30px;
     top:1050 px;
 }
 .product-image:last-child {
-    top: 30px; px; 
+    top: 500px;
     left: 180px; 
-    z-index: 1; /
+    z-index: 0; /
 }
 
 

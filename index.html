@@ -9,8 +9,9 @@
 </head>
 <header>
     <div>
-    <a href="index.html"></a> <img class="logo" src="img/2024 - Grey wolf logo text and icon - Denice Busk Nielsen.png" alt="Logo"></a>
-    <i class="fa-solid fa-basket-shopping"></i>
+    <a href="index.html"> <img class="logo" src="img/2024 - Grey wolf logo text and icon - Denice Busk Nielsen.png" alt="Logo"></a>
+    <i class="fa-solid fa-basket-shopping"><a</i>
+
 </div>
    
    <!-- Burger Menu Toggle Checkbox -->
@@ -51,7 +52,7 @@
 
        <div class="image-container1">
         <img src="img/Icey dark sand iceland.jpg" class="overlag">
-        <div class="text-overlay1">BASIEWEAR</div>
+        <div class="text-overlay1">BASICEWEAR</div>
         <img src="img/Dark blue jump reklame 2.jpg" class="overlag">
         
     </div>
@@ -91,14 +92,38 @@
         <div class="footer">
             <!-- Logo over knapperne -->
             <div class="footer-logo">
-        <a href="Bag om Grey Wolf.html"></a> <img class="footer-logo" src="img/2024 - Grey wolf logo text and icon - Denice Busk Nielsen.png" alt="Logo"></a>
+        <a href="index.html"><img class="footer-logo" src="img/2024 - Grey wolf logo text and icon - Denice Busk Nielsen.png" alt="Logo"></a>
         
         <div class="footer-buttons">
     
 <!-- Knap 1 -->
      <a href="Bag om Grey Wolf.html">Bag om Grey Wolf</a>
 <!-- Knap 2 -->
-    <a href="#">Kontakt Os</a>
+    <a href="#popup" class="contact-btn">Kontakt Os</a>    
+<!-- Popup boks -->
+<div id="popup">
+    <div class="popup-overlay"></div>
+    <div class="popup-content">
+        <!-- Logo i popup -->
+        <img src="img/2024 - Grey wolf face icon - Denice Busk Nielsen.png" alt="Logo" class="popup-logo">
+        
+        <p class="popup-text">Skriv til os, og vi vender tilbage hurtigst muligt.</p><h2>Kontakt os</h2>
+        <form action="/send" method="POST">
+            <label for="name">Navn:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Besked:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <!-- Luk popup knap -->
+        <a href="#" class="close-btn">Luk</a>
+    </div>
+</div>
+
+
+
         </div> 
              <i class="fa-brands fa-square-facebook"></i>
             <i class="fa-brands fa-square-instagram"></i>

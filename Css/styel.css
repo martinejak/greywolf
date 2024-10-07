@@ -5,7 +5,7 @@ header {
     height: 150px;
     max-width: none;
     display: flex;
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center; /* Centrér vertikalt */
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -41,35 +41,40 @@ body {
     justify-content: center; 
     top: auto;
     margin-bottom: 20px;
-    
+}
+/*logo på undersider*/
+.logoside {
+    max-width: 60px;
+    height:auto
+    justify-content: center;
 }
 h1 {
     color: white; 
-    font-family: 'Playfair display', sans-serif; 
+    font-family: 'Playfair display'; 
     font-size: 36px; 
     font-weight: bold; 
 }
 h2 {
     color: white; 
-    font-family: 'Playfair display', sans-serif; 
+    font-family: 'Playfair display'; 
     font-size: 36px; 
     font-weight: bold; 
 }
 h3 {
     color: white; 
-    font-family: 'Playfair display', sans-serif; 
+    font-family: 'Playfair display'; 
     font-size: 24px; 
     font-weight: bold; 
 }
 h4 {
     color: white; 
-    font-family: 'Playfair display', sans-serif; 
+    font-family: 'Playfair display'; 
     font-size: 12px; 
     font-weight: bold; 
 }
 h5 {
     color: white;
-    font-family: 'Playfair display', sans-serif; 
+    font-family: 'Playfair display'; 
     font-size: 14px; 
     font-weight: bold; 
 }
@@ -102,7 +107,6 @@ h5 {
     display: none; 
     padding-top: 60px;
     box-shadow: -2px 0 5px rgba(0,0,0,0.1);
-    
 }
 
 /* Menu links */
@@ -146,7 +150,6 @@ h5 {
 .hero-button:hover {
     background-color: #131212;
 }
-
 
 /*grafik på billeder*/
 .rulle1 {
@@ -378,6 +381,133 @@ input[type="submit"] {
     font-size: 16px;
     padding: 12px;
 }
+/* footer */
+footer{
+    background-color: rgb(255, 255, 255);
+    
+    color: rgb(7, 7, 7);
+    font-size: 2rem;
+    display: flex;
+    justify-content: baseline
+    align-items: center;
+    padding: 10px;
+}
+/* Container til knapperne */
+.footer-buttons {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    margin-bottom: 20px;
+}
+/* Knap styling */
+.footer-buttons a {
+    background-color: #b9b7b7; 
+    color: rgb(211, 98, 5);
+    padding: 10px 50px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease; 
+}
+<style>
+
+< /*  kontakt os knappen */
+.contact-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+/*  baggrund */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.popup-content {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    margin-bottom: 20px
+}
+/* Formularfelter */
+input, textarea {
+    width: 80%;
+    height: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px
+}
+/* Send knap */
+button {
+    background-color: #f17705;
+    color: rgb(7, 6, 6);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+    display: block ;
+}
+/* Luk knap */
+.close-btn {
+    background-color: rgb(143, 111, 111);
+    color: rgb(129, 124, 124);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+/* Gør popup synlig, når :target er aktiv */
+#popup:target .popup-overlay,
+#popup:target .popup-content {
+    display: block;
+}
+/* Style logoet i popup-boksen */
+.popup-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px; /
+}
+/* Tekst ovenover kontaktformular */
+.popup-text {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+</style>
+}
+.footer-buttons a:hover {
+    background-color: #f58c04;
+}
+/* Styling til logoet */
+.footer-logo {
+    height: auto;
+    margin-bottom: 20px;}
 
 /* Denice's CSS: Product container styling */
 .product-container {
@@ -673,30 +803,95 @@ footer{
         height: auto;
         margin-bottom: 20px;}
 
-/* SoMe ikoner container */
-.footer-some {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-/* SoMe ikoner styling */
-.footer-some a {
-    font-size: 24px;
-    color: rgb(15, 9, 9);
-    text-decoration: none;
-    padding: 10px;
-    background-color: #da7503;
-    border-radius: 50%; /* Runde ikoner */
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Hover-effekt på SoMe ikoner */
-.footer-some a:hover {
-    background-color: #f38406;
-}
+        < /*  kontakt os knappen */
+        .contact-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        /*  baggrund */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        .popup-content {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: center;
+            margin-bottom: 20px
+        }
+        /* Formularfelter */
+        input, textarea {
+            width: 80%;
+            height: 50%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px
+        }
+        /* Send knap */
+        button {
+            background-color: #f17705;
+            color: rgb(7, 6, 6);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: auto;
+            display: block ;
+        }
+        /* Luk knap */
+        .close-btn {
+            background-color: rgb(143, 111, 111);
+            color: rgb(129, 124, 124);
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            text-decoration: none;
+            text-align: center;
+        }
+        /* Gør popup synlig, når :target er aktiv */
+        #popup:target .popup-overlay,
+        #popup:target .popup-content {
+            display: block;
+        }
+        /* Style logoet i popup-boksen */
+        .popup-logo {
+            width: 80px;
+            height: auto;
+            margin-bottom: 20px; /
+        }
+        /* Tekst ovenover kontaktformular */
+        .popup-text {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 15px;
+        </style>
+        }
+        .footer-buttons a:hover {
+            background-color: #f58c04;
+        }

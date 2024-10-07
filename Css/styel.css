@@ -135,7 +135,7 @@ h5 {
 /* Knap styling */
 .hero-button {
     position: absolute;
-    top: 80%; 
+    top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     background-color: #a09e9e; 
@@ -306,9 +306,9 @@ h5 {
 
 .text-overlay {
     position: absolute; 
-    top: 50%; /*  vertikalt */
+    top: 45%; /*  vertikalt */
     left: 50%; /* horisontalt */
-    transform: translate(-50%, -50%); /* Justerer til midten */
+    transform: translate(-50%, -50%); 
     color: rgb(8, 8, 8); 
     font-size: 30px; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
@@ -598,19 +598,6 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .info-box1{
     position: absolute;
     width: auto%;
@@ -634,9 +621,38 @@ footer{
         
 
 /* Denice's CSS: Product container styling */
+
+
+         /* Grey box styling */
+        .nav-box {
+            width: 373px;
+            height: 24px;
+            background-color: #777; 
+            border-radius: 4px; 
+            display: flex;
+            align-items: center;
+            padding-left: 10px; 
+            font-family: 'Playfair Display', serif; 
+            font-size: 11px; 
+            color: black; 
+            margin: 4.7px auto;
+        }
+
+        /* Link styling for 'Dame' */
+        .nav-box a {
+            color: black;
+            text-decoration: none; 
+            margin-right: 5px; 
+        }
+
+        /* Arrow styling */
+        .nav-box .arrow {
+            margin-right: 5px; 
+        }
 .product-container {
-    position: relative; /* Position relative for absolute positioning of children */    width: 393px;
-    margin-top: 20px; /* Space from the navigation box */
+    position: relative; 
+    width: 393px;
+    margin-top: 20px; 
     height: auto;
     width: auto;
     }
@@ -644,32 +660,32 @@ footer{
 /* Product image */
 .product-image {
     height: auto;
-    object-fit: cover; /* Cover the area without stretching */
+    object-fit: cover; 
 }
  
 /* Text on the left side */
 .product-text {
-    position: absolute; /* Position text absolutely within the container */
-    left: 27.9px; /* Margin from left */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Adjust for exact vertical centering */
-    font-family: 'Playfair Display', serif; /* Playfair Display font */
-    font-weight: bold; /* Bold text */
-    font-size: 14px; /* Font size 14px */
-    color: white; /* White text color */
+    position: absolute; 
+    left: 27.9px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    font-family: 'Playfair Display', serif; 
+    font-weight: bold; 
+    font-size: 14px; 
+    color: white; 
 }
  
 /* Like button styling */
 .like-button {
     position: absolute;
-    top: 20px; /* Distance from top */
-    right: 10px; /* Distance from right */
-    width: 26px; /* Width of heart icon */
-    height: 26px; /* Height of heart icon */
-    background-color: transparent;/* Transparent background */
-    border: none; /* No border */
+    top: 20px; 
+    right: 10px; 
+    width: 26px; 
+    height: 26px; 
+    background-color: transparent;
+    border: none; 
     color: white;
-    cursor: pointer; /* Pointer cursor on hover */
+    cursor: pointer; 
 }
 /* Skjuler checkboxen */
 input[type="checkbox"] {
@@ -677,35 +693,35 @@ input[type="checkbox"] {
 }
 /* Heart icon */
 .heart {
-    color: rgb(226, 10, 10); /* Default color */
-    font-size: 24px; /* Icon size */
+    color: rgb(226, 10, 10); 
+    font-size: 24px; 
 }
  
 /* Arrow buttons styling */
 .arrow {
-    position: absolute; /* Position arrows absolutely */
+    position: absolute; 
     top: 50%;
     transform: translateY(-50%);
-    background-color: transparent; /* Transparent background */
-    border: none; /* No border */
-    cursor: pointer; /* Pointer cursor on hover */
-    color: white; /* White arrow color */
-    font-size: 24px; /* Arrow size */
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer; 
+    color: white; 
+    font-size: 24px; 
 }
  
 .arrow-left {
-    left: 10px; /* Distance from left */
+    left: 10px; 
 }
  
 .arrow-right {
-    right: 10px; /* Distance from right */
+    right: 10px; 
 }
 /* White text box styling */
 .info-box1 {
     height: 297px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    border: 1px solid black; /* Black stroke */
+    border: 1px solid black; 
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -825,7 +841,7 @@ p1 {
     font-family: 'Arial', sans-serif;
   }
   body {
-    background-color: #000; /* Sort baggrund */
+    background-color: #000; 
     color: #fff;
     padding: 0;
     margin: 0;
@@ -852,12 +868,12 @@ p1 {
 
 .produktkategori-overskrift{
     background-color: white;
-    font-size: 20px; /* Justér størrelsen på teksten */
-    text-align: center; /* Centrer teksten */
-    border: 3px solid black; /* Sort ramme rundt om teksten */
+    font-size: 20px; 
+    text-align: center; 
+    border: 3px solid black; 
     display:flexbox;
-    padding: 10px 20px; /* Lidt plads mellem teksten og rammen */
-    margin: 20px auto; /* Midterjustér og tilføj luft */
+    padding: 10px 20px; 
+    margin: 20px auto; 
 }
  /* logo */
 
@@ -873,8 +889,8 @@ p1 {
 /* Produkt galleri */
   .product-gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* To kolonner */
-    gap: 10px; /* Afstand mellem billederne */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
     padding: 20px;
   } 
   .gallery-item img {
@@ -899,14 +915,14 @@ p1 {
 .product-image img {
     width: 100%;
     border-radius: 8px;
-    display: block; /* Sørg for, at billedet opfører sig som et blok-element */
-    max-width: 100%; /* Undgå, at billedet bliver for stort */
+    display: block; 
+    max-width: 100%; 
     height: auto;
     }
 
 p {
-    font-size: 16px; /* Standard */
-    color: #000000; /* Text color */
+    font-size: 16px; 
+    color: #000000; 
     margin: 10px;
 }
 .product-info, a {
@@ -955,9 +971,9 @@ p {
 }
 
 .fa-heart{
-    flex-shrink: 0; /* Forhindrer ikonet i at krympe */
-    font-size: 24px; /* Default size for larger screens */
-    color: #000; /* Black color by default */
+    flex-shrink: 0; 
+    font-size: 24px; 
+    color: #000; 
     }
 
 .add-to-cart {
@@ -980,28 +996,28 @@ p {
   /* Responsiv styling */
   @media (max-width: 600px) 
     .gallery {
-        grid-template-columns: 1fr; /* En kolonne på mindre skærme */
+        grid-template-columns: 1fr; 
     }
     .produktkategori-overskrift {
-        font-size: 18px; /* Gør overskriften lidt mindre */
+        font-size: 18px; 
     }
     .product-card {
-        width: 100%; /* Fuld bredde på mindre skærme */
+        width: 100%; 
         margin-bottom: 20px;
     }
     .add-to-cart {
-        font-size: 12px; /* Reducer knapstørrelsen på små skærme */
+        font-size: 12px; 
         padding: 10px;
     }
     .fa-regular.fa-heart {
-        font-size: 18px; /* Sørg for, at ikonet vises tydeligt */
+        font-size: 18px; 
         margin-top: 10px;
-        flex-shrink: 0; /* Forhindrer ikonet i at krympe */
-        color: #333; /* Grå farve for mindre skærme */
+        flex-shrink: 0; 
+        color: #333; 
     }
     p {
-        font-size: 14px; /* Mindre tekststørrelse på små skærme */
-        margin: 5px; /* Mindre margener */
+        font-size: 14px; 
+        margin: 5px; 
     }
    
     

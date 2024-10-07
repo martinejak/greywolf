@@ -120,22 +120,46 @@
         
        
     
-    <footer>
-        <div class="footer">
-            <!-- Logo over knapperne -->
-            <div class="footer-logo">
-        <a href="index.html"> <img class="footer-logo" src="img/2024 - Grey wolf logo text and icon - Denice Busk Nielsen.png" alt="Logo"></a>
-        
-        <div class="footer-buttons">
+ <footer>
+    <div class="footer">
+        <!-- Logo over knapperne -->
+        <div class="footer-logo">
+    <a href="index.html"><img class="footer-logo" src="img/2024 - Grey wolf logo text and icon - Denice Busk Nielsen.png" alt="Logo"></a>
     
+    <div class="footer-buttons">
+
 <!-- Knap 1 -->
-     <a href="Bag om Grey Wolf.html">Bag om Grey Wolf</a>
+ <a href="Bag om Grey Wolf.html">Bag om Grey Wolf</a>
 <!-- Knap 2 -->
-    <a href="#">Kontakt Os</a>
-        </div> 
-             <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-brands fa-square-instagram"></i>
-            <i class="fa-brands fa-tiktok"></i>
-        </footer>
+<a href="#popup" class="contact-btn">Kontakt Os</a>    
+<!-- Popup boks -->
+<div id="popup">
+<div class="popup-overlay"></div>
+<div class="popup-content">
+    <!-- Logo i popup -->
+    <img src="img/2024 - Grey wolf face icon - Denice Busk Nielsen.png" alt="Logo" class="popup-logo">
+    
+    <p class="popup-text">Skriv til os, og vi vender tilbage hurtigst muligt.</p><h2>Kontakt os</h2>
+    <form action="/send" method="POST">
+        <label for="name">Navn:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Besked:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <!-- Luk popup knap -->
+    <a href="#" class="close-btn">Luk</a>
+</div>
+</div>
+
+
+
+    </div> 
+         <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+    </footer>
 </body>
 </html>
